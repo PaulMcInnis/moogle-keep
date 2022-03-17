@@ -1,6 +1,7 @@
-import { MouseEventHandler, ReactChild } from "react";
+import React from 'react'
+import { MouseEventHandler } from "react";
 import { Button } from "./button";
-import MoogleIcon from "./moogle.png";
+import MoogleIcon from "../moogle.png";
 
 //FIXME these extra div tags r a mess lol
 

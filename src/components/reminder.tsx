@@ -1,7 +1,8 @@
-import { MouseEventHandler, ReactChild } from "react";
+import React from "react";
+import { MouseEventHandler } from "react";
 import { Button } from "./button";
 
-interface ItemProps {
+interface ReminderProps {
   onClickCompleted: MouseEventHandler<HTMLButtonElement>;
   message: string;
   date: string;
@@ -9,7 +10,11 @@ interface ItemProps {
 
 // FIXME popped out button state
 
-export default function Item({ onClickCompleted, message, date }: ItemProps) {
+export default function Reminder({
+  onClickCompleted,
+  message,
+  date,
+}: ReminderProps) {
   return (
     <div className="pb-4">
       <section className="flex h-28 justify-between w-full xl:w-3/4 max-w-5xl mx-auto border-2 border-black rounded-2xl bg-white">

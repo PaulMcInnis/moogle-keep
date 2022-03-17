@@ -35,10 +35,13 @@ export default function Modal({
               type="text"
               name="reminder-message"
               onChange={(e) => setCurrentMessage(e.target.value)}
-              style={{ height: "100px", width:"440px", background:"lightgrey"}}
+              style={{
+                height: "100px",
+                width: "440px",
+                background: "lightgrey",
+              }}
               autoComplete="off"
             />
-
 
             <div className="flex items-end">
               <Button
